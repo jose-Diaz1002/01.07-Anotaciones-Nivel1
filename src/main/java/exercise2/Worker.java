@@ -1,4 +1,4 @@
-package ejercicio1;
+package exercise2;
 
 public class Worker {
     private String name;

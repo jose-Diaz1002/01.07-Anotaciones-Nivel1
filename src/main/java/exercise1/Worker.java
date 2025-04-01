@@ -1,11 +1,11 @@
-package ejercicio2;
+package exercise1;
 
-public class Worker2 {
+public class Worker {
     private String name;
     private String lastName;
     private int priceHour;
 
-    public Worker2(String name, String lastName, int priceHour) {
+    public Worker(String name, String lastName, int priceHour) {
         this.name = name;
         this.lastName = lastName;
         this.priceHour = priceHour;
@@ -34,7 +34,9 @@ public class Worker2 {
     public void setPriceHour(int priceHour) {
         this.priceHour = priceHour;
     }
-    public int cacularSou(int hours){
+
+    public int calculateSalary(int hours) {
+
 
         return priceHour * hours;
     }
