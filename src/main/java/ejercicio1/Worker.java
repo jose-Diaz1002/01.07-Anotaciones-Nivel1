@@ -1,11 +1,11 @@
 package ejercicio1;
 
-public class  Trabajador {
+public class Worker {
     private String name;
     private String lastName;
     private int priceHour;
 
-    public Trabajador(String name, String lastName, int priceHour) {
+    public Worker(String name, String lastName, int priceHour) {
         this.name = name;
         this.lastName = lastName;
         this.priceHour = priceHour;

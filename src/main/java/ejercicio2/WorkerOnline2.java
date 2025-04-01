@@ -1,8 +1,8 @@
-package ejercicio1;
+package ejercicio2;
 
-public class TrabajadorOnline extends Trabajador {
+public class WorkerOnline2 extends Worker2 {
     private static final int INTERNETRATE = 30;
-    public TrabajadorOnline(String name, String lastName, int priceHour) {
+    public WorkerOnline2(String name, String lastName, int priceHour) {
         super(name, lastName, priceHour);
     }
 
