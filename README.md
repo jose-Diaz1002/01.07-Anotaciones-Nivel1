@@ -1,6 +1,5 @@
-Worker Hierarchy and Deprecated Methods
+01.07-Anotaciones-nivel1
 📄 Description - Exercise Statement
-This project consists of two exercises:
 
 Exercise 1
 Create a hierarchy of objects with three classes: Worker, OnlineWorker, and OnsiteWorker.
@@ -32,4 +31,4 @@ Java Development Kit (JDK) 8 or later
 
 A Java IDE such as IntelliJ IDEA or Eclipse
 
-🛠️ Installation
+
