@@ -1,34 +1,56 @@
-01.07-Anotaciones-nivel1
-📄 Description - Exercise Statement
+📚 01.07 - Annotations - Level 1
 
-Exercise 1
-Create a hierarchy of objects with three classes: Worker, OnlineWorker, and OnsiteWorker.
+📄 Description
+This Java project focuses on the use of annotations, particularly @Override and @Deprecated. 
+Through object-oriented inheritance, you will learn how to correctly override methods and mark 
+legacy methods as deprecated, along with the proper use of annotation-based warning suppression.
 
-The Worker class has the attributes: name, surname, and hourlyRate. It also includes the calculateSalary() method, which takes the number of hours worked as a parameter and multiplies it by the hourly rate.
+📌 Exercises
+✅ Exercise 1: Salary Calculation with Inheritance and @Override
+Create a class hierarchy with the following structure:
 
-The child classes must override this method using the @Override annotation:
+Class Treballador
 
-Onsite Workers: Their salary calculation includes an additional static attribute called gasoline, added to the final calculation.
+Attributes: name, surname, hourlyRate
 
-Online Workers: Their salary calculation includes a constant representing the flat internet fee, which is added to the final salary.
+Method: calcularSou(int hoursWorked) → returns hoursWorked * hourlyRate
 
-The main() method should include calls to these methods to demonstrate how the @Override annotation works.
+Subclass TreballadorPresencial
 
-Exercise 2
-Add some deprecated methods to the child classes and use the @Deprecated annotation.
+Overrides calcularSou()
 
-Create an external class that calls these deprecated methods while suppressing the warnings using the appropriate annotation.
+Includes a static field benzina
+
+Salary = (hoursWorked * hourlyRate) + benzina
+
+Subclass TreballadorOnline
+
+Overrides calcularSou()
+
+Includes a constant for the flat-rate internet fee
+
+Salary = (hoursWorked * hourlyRate) + INTERNET_FLAT_RATE
+
+From the main() method in the main class, instantiate each type of worker and invoke the overridden 
+method to demonstrate how @Override works.
+
+✅ Exercise 2: Deprecated Methods and Suppression
+Add some deprecated methods to the child classes.
+
+Use the @Deprecated annotation to mark them.
+
+From an external class, call those deprecated methods.
+
+Use @SuppressWarnings("deprecation") to suppress the warning messages.
 
 💻 Technologies Used
-Java
+Java 8+
 
 Object-Oriented Programming (OOP)
 
-Annotations (@Override, @Deprecated, @SuppressWarnings)
+Annotations: @Override, @Deprecated, @SuppressWarnings
 
 📋 Requirements
-Java Development Kit (JDK) 8 or later
+JDK 8 or higher
 
-A Java IDE such as IntelliJ IDEA or Eclipse
-
-
+Any Java IDE (IntelliJ IDEA, Eclipse, VS Code, NetBeans, etc.)
